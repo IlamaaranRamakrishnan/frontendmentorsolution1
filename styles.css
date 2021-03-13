@@ -1,0 +1,204 @@
+*{
+margin:0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+max-width: 1440px;
+max-height: 1024px;
+
+
+}
+body{
+    background: #FAFAFA;
+    width: 100%;
+   
+}
+.header-section{
+    text-align: center;
+}
+
+.first-word{
+    color: #A3A5AE;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.second-word{
+    color:#4C4E61;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-top:30px;
+   
+}
+
+.third-word{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 30px;
+    margin: 0 150px;
+}
+/* grid function */
+.main-container{
+    position: relative;
+    padding-top: 110px;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-gap:10px;
+    margin: 0 110px;
+}
+
+.supervisor, .calculator{
+    padding-top: 150px;
+    
+}
+
+
+.supervisor-picture, .team-builder-picture, .karma-picture , .calculator-picture{
+    transition: 300ms;
+}
+
+/* hover function */
+.supervisor-picture:hover{
+    transform: translateY(-8px);
+}
+
+.team-builder-picture:hover{
+    transform: translateY(-8px);
+}
+
+.karma-picture:hover{
+    transform: translateY(-8px);
+}
+
+.calculator-picture:hover{
+    transform: translateY(-8px);
+}
+
+/* footer editing */
+footer p{
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+}
+
+
+/* Media queries */
+
+@media(max-width:600px){
+    
+    body{
+        background: #FAFAFA;
+    }
+
+    .header-section{
+        text-align: center;
+    }
+
+    .first-word{
+            
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            padding-top: 30px;
+        }
+
+    .second-word{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            padding-top:30px;
+
+        }
+
+    .third-word{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            padding-top: 30px;
+          
+            text-align: center;
+        }     
+    
+    .main-container{
+            position: relative;
+            padding-top: 20px;
+            padding-left: 90px;
+            display:grid;
+            grid-template-columns: auto;
+            grid-template-rows:auto auto auto;
+            grid-gap:10px;
+            margin: 0 auto;
+          
+        }
+
+    .supervisor, .calculator{
+            padding-top: 0px;
+    }
+
+  /*cancel out transition not good in mobile view*/
+
+    .supervisor-picture, .team-builder-picture, .karma-picture , .calculator-picture{
+        transition: none;
+    }
+    
+    /* hover function */
+    .supervisor-picture:hover{
+        transform: none;
+    }
+    
+    .team-builder-picture:hover{
+        transform: none;
+    }
+    
+    .karma-picture:hover{
+        transform: none;
+    }
+    
+    .calculator-picture:hover{
+        transform: none;
+    }
+
+    /*change image width and height*/
+   
+
+    section div div img{
+        
+         width:80%;
+         height:80%;
+    }
+
+ 
+
+    section div img{
+        width:80%;
+        height:80%;
+   }
+
+   /*edit second container*/
+   .second-container{
+    position: relative;
+    display:grid;
+    grid-template-columns: auto;
+    grid-gap:10px;
+    margin: 0 ;
+   }
+
+
+    footer p{
+           position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            padding-top:30px;
+            
+            text-align: center;
+            }    
+        
+}
